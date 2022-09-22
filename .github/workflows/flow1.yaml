@@ -9,7 +9,7 @@ env:
     AZURE_CONTAINER_REGISTRY: reghoolva2
     CLUSTER_NAME: myAKSCluster
     CLUSTER_RESOURCE_GROUP: RGHoolvaAKS
-    CONTAINER_NAME: myakscluster
+    CONTAINER_NAME: uniuuujanusgatewaydocker
     DEPLOYMENT_MANIFEST_PATH: |
         ./manifests/deployment.yml
 jobs:
@@ -55,4 +55,4 @@ jobs:
                 action: deploy
                 images: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ github.sha }}
                 manifests: ${{ env.DEPLOYMENT_MANIFEST_PATH }}
-                namespace: namespace-workflow-1663267172552
+                namespace: namespace-workflow-1663825745345
